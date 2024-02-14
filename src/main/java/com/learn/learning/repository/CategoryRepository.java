@@ -1,6 +1,5 @@
 package com.learn.learning.repository;
 
-import java.util.Locale.Category;
 import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -8,5 +7,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import com.learn.learning.entity.CategoryEntity;
 
 public interface CategoryRepository  extends JpaRepository<CategoryEntity, Long> {
-	Optional<Category> findByCategoryType(String category);
+	Optional<CategoryEntity> findByCategoryType(String category);
 }
